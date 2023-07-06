@@ -33,21 +33,22 @@ provider "aws" {
   region = "ap-southeast-2"
 }
 
-resource "aws_vpc" "test1" {
-  provider = aws.global
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
-  tags = {
-    Name = "test1"
-  }
-}
+#### Working #####
+# resource "aws_vpc" "test1" {
+#   provider = aws.global
+#   cidr_block       = "10.0.0.0/16"
+#   instance_tenancy = "default"
+#   tags = {
+#     Name = "test1"
+#   }
+# }
 
-
-resource "aws_vpc" "minhem" {
-  provider = aws.minhem
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
-  tags = {
-    Name = "minhem"
-  }
-}
+#### minh em #####
+# resource "aws_vpc" "minhem" {
+#   provider = aws.minhem
+#   cidr_block       = "10.0.0.0/16"
+#   instance_tenancy = "default"
+#   tags = {
+#     Name = "minhem"
+#   }
+# }
