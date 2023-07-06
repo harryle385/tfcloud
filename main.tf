@@ -26,12 +26,12 @@ provider "aws" {
   region = "ap-southeast-1"
 }
 
-# provider "aws" {
-#   alias = "minhem"
-#   access_key = var.minh_AWS_ACCESS_KEY_ID
-#   secret_key = var.minh_AWS_SECRET_ACCESS_KEY
-#   region = "ap-southeast-2"
-# }
+provider "aws" {
+  alias = "minhem"
+  access_key = var.minh_AWS_ACCESS_KEY_ID
+  secret_key = var.minh_AWS_SECRET_ACCESS_KEY
+  region = "ap-southeast-2"
+}
 
 #### Working #####
 # resource "aws_vpc" "test1" {
